@@ -6,7 +6,7 @@ element.innerHtml= 'New Value';
 var img = document.getElementById('madi');
 var marginLeft = 0;
  fuction moveRight()  {
-    marginLeft = marginLeft + 10;
+    marginLeft = marginLeft + 5;
     img.style.marginLeft = marginLeft + 'px';
 }
 img.onClick = function() {

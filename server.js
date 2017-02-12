@@ -47,7 +47,7 @@ var articleThree = {
                 <p>
                     Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
                 </p> `
-},
+}
 };
 
 

@@ -100,6 +100,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
+  var articleName = req.params.articlename;
   res.send(createTeplate(articles[articleName]));
 });
 

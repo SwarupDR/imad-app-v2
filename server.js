@@ -5,9 +5,22 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
+var articles= {
 var articleOne = {
-    title : 'Article One | Swarup',
+     heading: 'Article Two',
+    date: '12 Feb, 2017',
+    content:
+    `<p>
+                    Content for my second article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
+                </p>
+                <p>
+                    Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
+                </p>
+                <p>
+                    Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
+                </p> `
+},
+var articleTwo = {
     heading: 'Article One',
     date: '12 Feb, 2017',
     content:
@@ -20,7 +33,23 @@ var articleOne = {
                 <p>
                     Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
                 </p> `
+},
+var articleThree = {
+    heading: 'Article Three',
+    date: '12 Feb, 2017',
+    content:
+    `<p>
+                    Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
+                </p>
+                <p>
+                    Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
+                </p>
+                <p>
+                    Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
+                </p> `
+},
 };
+
 
 
 

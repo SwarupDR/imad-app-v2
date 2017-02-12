@@ -4,9 +4,10 @@ var element = document.getElementById('main-text');
 element.innerHtml= 'New Value';
 //move the image
 var img = document.getElementById('madi');
-fuction moveRight() {
-    marginleft = marginleft + 10;
-    img.style.marginleft = marginleft + 'px';
+var marginLeft = 0;
+ fuction moveRight()  {
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + 'px';
 }
 img.onClick = function() {
     var interval = setInterval(moveRight, 100);

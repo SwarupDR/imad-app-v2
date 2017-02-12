@@ -6,8 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles=  {
-articleOne: {
-     heading: 'Article Two',
+'article-one': {
+     heading: 'Article One',
     date: '12 Feb, 2017',
     content:
     `<p>
@@ -20,7 +20,7 @@ articleOne: {
                     Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
                 </p> `
 },
-articleTwo: {
+'article-two': {
     heading: 'Article Two',
     date: '12 Feb, 2017',
     content:
@@ -34,7 +34,7 @@ articleTwo: {
                     Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article.Content for my first article
                 </p> `
 },
-articleThree: {
+'article-three': {
     heading: 'Article Three',
     date: '12 Feb, 2017',
     content:
@@ -99,8 +99,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTeplate(articleOne));
+app.get('/:articleName', function (req, res) {
+  res.send(createTeplate(articles[articleName]));
 });
 
 app.get('/article-two', function (req, res) {
